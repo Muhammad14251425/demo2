@@ -33,7 +33,7 @@ const footer = [
 ]
 const Footer = () => {
     return (
-        <div className='border-t'>
+        <div className=' bg-slate-400/15'>
             <div className="flex flex-col md:flex-row items-center justify-center gap-x-24 md:gap-x-[480px] lg:gap-x-[600px] xl:gap-x-[700px] 2xl:gap-x-[960px] px-2">
                
                 <Logo />
@@ -46,10 +46,10 @@ const Footer = () => {
                         footer.map((item, index) => (
                             <AccordionItem key={index} value={item.heading}>
                                 <AccordionTrigger >{item.heading}</AccordionTrigger>
-                                <AccordionContent className="flex flex-col gap-y-6 pt-2">
-                                    <p>{item.part1}</p>
-                                    <p>{item.part2}</p>
-                                    <p>{item.part3}</p>
+                                <AccordionContent className="flex flex-col gap-y-6 pt-2 bg-white  ">
+                                    <p className="hover:underline" >{item.part1}</p>
+                                    <p className="hover:underline" >{item.part2}</p>
+                                    <p className="hover:underline" >{item.part3}</p>
                                 </AccordionContent>
                             </AccordionItem>
                         ))}

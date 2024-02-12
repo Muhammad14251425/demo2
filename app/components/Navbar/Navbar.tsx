@@ -6,7 +6,7 @@ import { NavigationMenuBar } from './Navigationbar'
 
 const page = () => {
   return (
-    <div className='flex items-center justify-between px-10 border-b h-24'>
+    <div className='flex items-center justify-between px-4 border-b h-16 lg:h-24 '>
         <Logo />
         <NavigationMenuBar />
         <ActionButtons />

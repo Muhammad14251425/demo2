@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/sheet"
 import { AlignJustify } from "lucide-react"
 import Link from "next/link"
+import Logo from "./Logo"
 const ActionButtons = () => {
   return (
     <div>
@@ -17,15 +18,18 @@ const ActionButtons = () => {
           <SheetTrigger>
             <AlignJustify />
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent className="bg-gray-300">
               <SheetHeader>
-                <SheetDescription >
+                <SheetDescription  >
+                    <div className="-mt-8 -ml-6">
+                    <Logo />
+                    </div>
                   <div className="flex flex-col gap-y-4 w-full items-start text-lg text-black mt-10">
-                    <Link href="/">Sign In</Link>
-                    <Link href="/">Getting Started</Link>
-                    <Link href="/">Templates</Link>
-                    <Link href="/">Documentation</Link>
-                    <Link href="/">Pricing</Link>
+                    <Link href="/" className="border-b border-black w-full text-left pb-2">Sign In</Link>
+                    <Link href="/" className="border-b border-black w-full text-left pb-2">Getting Started</Link>
+                    <Link href="/" className="border-b border-black w-full text-left pb-2">Templates</Link>
+                    <Link href="/" className="border-b border-black w-full text-left pb-2">Documentation</Link>
+                    <Link href="/" className="border-b border-black w-full text-left pb-2">Pricing</Link>
                     
                   </div>
                 </SheetDescription>
